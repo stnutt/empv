@@ -38,7 +38,10 @@
 
 (defun empv-json-encode (object)
   "Return the JSON-encoded string for the OBJECT."
-  (json-encode object))
+  (let ((json-encoding-separator ",")
+        (json-encoding-pretty-print nil)
+        (json-encoding-object-sort-predicate nil))
+    (json-encode object)))
 
 (provide 'empv-json)
 ;;; empv-json.el ends here
