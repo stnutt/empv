@@ -1,0 +1,5 @@
+*~
+*.elc
+*-loaddefs.el
+TAGS
+flycheck_*
