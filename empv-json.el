@@ -3,7 +3,6 @@
 ;; Copyright (C) 2017  Stephen Nutt
 
 ;; Author: Stephen Nutt <stnutt@gmail.com>
-;; Keywords: multimedia
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by

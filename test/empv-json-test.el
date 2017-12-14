@@ -8,9 +8,9 @@
 
 (ert-deftest empv-json-test-read-invalid ()
   "Verify nil read from invalid JSON string."
-  (should (null (empv-json-read-from-string "{"))))
+  (should-not (empv-json-read-from-string "{")))
 
 (ert-deftest empv-json-test-encode ()
   "Verify a string JSON-encoded from an object."
-  (should (string-match-p "{\"array\":\\[null, *false\\]}"
+  (should (string-match-p "\\`{\"array\":\\[null, *false\\]}\\'"
                           (empv-json-encode '(:array (nil :json-false))))))

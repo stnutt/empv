@@ -5,3 +5,5 @@ before_install:
   - sudo apt-get install -qq -yy emacs25-nox emacs25-el
 script:
   - make test
+notifications:
+  email: false
