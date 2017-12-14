@@ -12,5 +12,5 @@
 
 (ert-deftest empv-json-test-encode ()
   "Verify a string JSON-encoded from an object."
-  (should (string-match-p "\\`{\"array\":\\[null, *false\\]}\\'"
-                          (empv-json-encode '(:array (nil :json-false))))))
+  (should (equal (empv-json-encode '(:array (nil :json-false)))
+                 "{\"array\":[null,false]}")))
